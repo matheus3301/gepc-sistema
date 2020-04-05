@@ -43,16 +43,24 @@
 		<div class="header-right">			
 			<div class="user-panel">
 				<a  class="login text-white" data-toggle="modal" data-target="#modelLogin" style="cursor:pointer">Login</a>
-				<a href="" class="register">Crie uma Conta</a>
+				<a href="cadastro.php" class="register">Crie uma Conta</a>
 				
 				
-				<!-- Modal -->
+				
+			</div> 
+		</div>
+		<ul class="main-menu">
+			<li><a href="index.html">Início</a></li>
+			<li><a href="#">Sobre</a></li>			
+		</ul>
+	</header>
+	<!-- Modal -->
 				<div class="modal fade" id="modelLogin" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
 							<div class="modal-header" style="background-color:#07243d">
 								<h5 class="modal-title text-white">Login</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
 									</button>
 							</div>
@@ -80,29 +88,9 @@
 						</div>
 					</div>
 				</div>
-			</div> 
-		</div>
-		<ul class="main-menu">
-			<li><a href="index.html">Início</a></li>
-			<li><a href="#">Sobre</a></li>
-			<!-- 
-                <li><a href="#">Pages</a>
-				<ul class="sub-menu">
-					<li><a href="category.html">Category</a></li>
-					<li><a href="playlist.html">Playlist</a></li>
-					<li><a href="artist.html">Artist</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</li>
-			<li><a href="blog.html">News</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            -->
-		</ul>
-	</header>
 
 	<script>
-		 function mostrarErro(erro){
+		function mostrarErro(erro){
             $("#status").html('<div class="alert alert-warning alert-dismissible fade show" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>Erro!</strong> '+erro+'</div>');
 
         }

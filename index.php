@@ -8,11 +8,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6">
-							<div class="hs-text">
+							<div class="hs-text text-center">
 								<h2><span>GEPC</span> UFC.</h2>
 								<p>Grupo de Estudos em Programação Competitiva</p>
-								<a href="#" class="site-btn">Entre</a>
-								<a href="#" class="site-btn sb-c2">Cadastre-se</a>
+								<a data-toggle="modal" data-target="#modelLogin" style="cursor:pointer" class="text-white site-btn">Entre</a>
+								<a href="cadastro.php" class="site-btn sb-c2">Cadastre-se</a>
 							</div>
 						</div>
 						<div class="col-lg-6">

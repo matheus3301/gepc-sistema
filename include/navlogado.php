@@ -45,18 +45,24 @@
 	 -->
 	<!-- Header section -->
 	<header class="header-section clearfix">
-		<a href="index.html" class="site-logo">
+		<a href="meuperfil.php" class="site-logo">
 			<img src="img/logo.png" alt="">
 		</a>
 		<div class="header-right">			
 			<div class="user-panel">
-				<span>Olá, <?php echo $_SESSION['nome']; ?></span>
+				<a href="meuperfil.php"><span>Olá, <?php echo $_SESSION['nome']; ?></span></a>
 				<a name="logout" id="logout" class="btn btn-danger" href="controller/user.php?op=logout" role="button">Sair</a>				
 				
 			</div> 
 		</div>
 		<ul class="main-menu">
-			<li><a href="meuperfil.php">Meu Perfil</a></li>
+			<?php
+			 if($_SESSION['tipo'] == 'admin'){
+			?>
+			<li><a href="restrito.php">Restrito</a></li>
+			<?php
+			 }
+			?>
 			<li><a href="forum.php">Fórum</a></li>
 			<li><a href="blog.php">Blog</a></li>
 			<li><a href="downloads.php">Downloads</a></li>
